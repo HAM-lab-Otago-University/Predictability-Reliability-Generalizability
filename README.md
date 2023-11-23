@@ -53,5 +53,24 @@ The directory contains the following files and folders:
 06 IQ resuduals calculation.ipynb – the script does fold-wise total cognitive score adjustment (adult to childhood).
 
 
+2_Modelling/01_NESI_ML/ – the folder contains the main machine learning scripts, adapted to the super computer calculations (on NeSI). The ML parameters for 4 algorithms can be found at params.py script. The calculations can be launched through train_*.py scripts for the single modality level and train_layer2_*.py for the stacked level;
+
+/2_Modelling/02_slurm_launch/ – the folder contains the slurm files helping to launch previous step;
+
+/2_Modelling/03_Generalizability/LS_3dataset_ElasticNet_cognition_NonTask_AgeSexAdj_New_version_stacked.ipynb – the script does the machine learning rounds for the generalizability modelling;
+
+/2_Modelling/04_HCP_YA_models/
+
+01_HCP-YA_ENet_Stacked_cognition_pca75_noRestMov_AgeADJ_manyCon_NEW_ADJ_TYPE_OneTrain_stackSTD_5cv_Feature_Importance_new_enhanced_sets.ipynb – the script runs one-fold machine learning Elastic Net round for getting a feature importance (elastic net weights);
+
+02_HCP-YA_RETEST_ElasticNet_cognition_pca75_taskFC_NewADJ_OneTrain_stackSTD_5cv_new_enhanced_sets.ipynb – the script runs a one-fold machine learning Elastic Net round with 2 testing sets for test-retest reliability.
+
+/2_Modelling/05_HCP_A_models/01_HCP-A_ENet_Stacked_COG_pca75_ALLADJ_trainAdj_OneTrain_StackSTD_5cv_Feature_Importance_short.ipynb – the script runs one-fold machine learning Elastic Net round for getting a feature importance (elastic net weights). 
+
+/2_Modelling/06_DUD_models/
+
+01_DUD_StackedML_ElasticNet_cognition_pca75_task-FC-unstd_iq45_NewADJ_OneTrain_stackSTD_5cv_Feature Importance.ipynb - the script runs one-fold machine learning Elastic Net round for getting a feature importance (elastic net weights);
+
+02_DUD_RETEST_ElasticNet_cognition_pca75_taskFC_NewADJ_OneTrain_stackSTD_5cv.ipynb – the script runs a one-fold machine learning Elastic Net round with 2 testing sets for test-retest reliability.
 
 
