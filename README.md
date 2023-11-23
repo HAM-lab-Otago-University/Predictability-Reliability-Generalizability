@@ -18,7 +18,7 @@ Some files, if not placed in this directory, can be found in our aforementioned 
 Common abbreviations within scripts:
  - HCP-YA, hcp-ya, hcp_ya, ya - HCP Young Adults dataset,
  - HCP-A, hcp-a, hcp_a, a - HCP Aging dataset,
- - DUD, DUD45, DUD_ch, DUD_res, dud, d - Dunedin Study dataset (with next extension: 45 - scanned at age 45 years old; ch - observed or tested at childhood age (7-11 years old), res - residuals)
+ - DUD, DUD45, DUD_ch, DUD_res, dud, d - Dunedin Study dataset (with next extensions: 45 - scanned at age 45 years old; ch - observed or tested at childhood age (7-11 years old), res - residuals)
  - FC - functional connectivity,
  - ROI - region of interest,
  - IQ - total cognitive score (for Wechsler Intelligence Scale),
@@ -47,7 +47,7 @@ The directory contains the following files and folders:
 /2_Modelling/02_slurm_launch/ – the folder contains the slurm files helping to launch previous step;
 
 /2_Modelling/03_Generalizability/
- - LS_3dataset_ElasticNet_cognition_NonTask_AgeSexAdj_New_version_stacked.ipynb – the script does the machine learning rounds for the generalizability modelling;
+ - LS_3dataset_ElasticNet_cognition_NonTask_AgeSexAdj_New_version_stacked.ipynb – the script does the machine learning rounds for the generalizability modeling;
 
 /2_Modelling/04_HCP_YA_models/
  - 01_HCP-YA_ENet_Stacked_cognition_pca75_noRestMov_AgeADJ_manyCon_NEW_ADJ_TYPE_OneTrain_stackSTD_5cv_Feature_Importance_new_enhanced_sets.ipynb – the script runs one-fold machine learning Elastic Net round for getting a feature importance (elastic net weights);
