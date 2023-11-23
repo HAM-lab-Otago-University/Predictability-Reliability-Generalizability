@@ -60,6 +60,13 @@ The directory contains the following files and folders:
  - 01_DUD_StackedML_ElasticNet_cognition_pca75_task-FC-unstd_iq45_NewADJ_OneTrain_stackSTD_5cv_Feature Importance.ipynb - the script runs one-fold machine learning Elastic Net round for getting a feature importance (elastic net weights);
  - 02_DUD_RETEST_ElasticNet_cognition_pca75_taskFC_NewADJ_OneTrain_stackSTD_5cv.ipynb – the script runs a one-fold machine learning Elastic Net round with 2 testing sets for test-retest reliability.
 
+3_Results_Analysis_and_Plotting/
+ - 01 Results main models hcp-ya, hcp-a, dud 4 algorithms CV.ipynb – the script runs predictive performance indices table assembling and plotting, based on each folds (cv) performance;
+ - 02 Results main models hcp-ya, hcp-a, dud 4 algorithms Bootstrap.ipynb – the script runs the bootstrapping of predicted indices;
+ - 03 results TRAIN main models hcp-ya, hcp-a, dud 4 algorithms  for rest acomcor.ipynb; 03 results TRAIN main models hcp-ya, hcp-a; dud 4 algorithms  for rest fix.ipynb, 03 results TRAIN rest hcp ya comparison.ipynb – these scripts check the difference in training predictive performance for FIX and aComCor cleaned resting state modality;
+ - 04 DUD Check performance after nesi Bootstrap COR.ipynb; 04 DUD Check performance after nesi Bootstrap MAE.ipynb; 04 DUD Check performance after nesi Bootstrap R2.ipynb; 04 HCP-A Check performance after nesi Bootstrap COR.ipynb; 04 HCP-A Check performance after nesi Bootstrap MAE.ipynb; 04 HCP-A Check performance after nesi Bootstrap R2.ipynb; 04 HCP-YA Check performance after nesi Bootstrap COR.ipynb; 04 HCP-YA Check performance after nesi Bootstrap MAE.ipynb; 04 HCP-YA Check performance after nesi Bootstrap R2.ipynb – these scripts check the bootstrapped difference between the best single or stacked Elastic Net modality with the rest algorithms and algorithms combinations for each dataset;
+ - 09_feature importance total brain volume 3 datasets.ipynb – this script plots the total brain volume values for 3 datasets on one image.
+
 /3_Results_Analysis_and_Plotting/05_generalizability/
  - results_stack_generalizability-extras.ipynb – the script visualizes the generalizability script results.
 
