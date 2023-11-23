@@ -16,13 +16,13 @@ The data for this article was extensively preprocessed within previous projects 
 Some files, if not placed in this directory, can be found in our aforementioned github projects.
 
 Common abbreviations within scripts:
-
-HCP-YA, hcp-ya, hcp_ya, ya - HCP Young Adults dataset,
-
-HCP-A, hcp-a, hcp_a, a - HCP Aging dataset,
-
-DUD, DUD45, DUD_ch, DUD_res, dud, d - Dunedin Study dataset (with next extension: 45 - scanned at age 45 years old; ch - observed or tested at childhood age (7-11 years old), res - residuals)
-
+ - HCP-YA, hcp-ya, hcp_ya, ya - HCP Young Adults dataset,
+ - HCP-A, hcp-a, hcp_a, a - HCP Aging dataset,
+ - DUD, DUD45, DUD_ch, DUD_res, dud, d - Dunedin Study dataset (with next extension: 45 - scanned at age 45 years old; ch - observed or tested at childhood age (7-11 years old), res - residuals)
+ - FC - functional connectivity,
+ - ROI - region of interest,
+ - IQ - total cognitive score (for Wechsler Intelligence Scale),
+ - PCA - principal component analysis,
 
 
 The directory contains the following files and folders:
