@@ -29,48 +29,54 @@ The directory contains the following files and folders:
 
 
 /1_Preprocessing/hcp_ya/
-
-01_fMRIPrep – folder contains slurm scripts for running fMRIPrep preprocessing script on resting state and task data of HCP-YA,
-
-02_XCP-D – folder contains slurm scripts for running XCP-D cleaning script on resting state and task data of HCP-YA,
-
-03_HCP-YA_New_rest-state_extraction_from_cifti_to_table.ipynb, 04_HCP-YA_New_rest-state_extraction_from_cifti_to_table-RETEST.ipynb, 05_HCP-YA_TASK_FC.ipynb, 06_HCP-YA_TASK_FC_retest.ipynb – scripts assembles atlas-based csv tables from CIFTI files from the previous step,
-
-07_HCP-YA_ENet_Stacked_cognition_norace_pca75_noRestMov_AgeADJ_manyCon_NEW_ADJ_TYPE_OneTrain_stackSTD_5cv_new enhanced.ipynb – this script does fold-wise brain feature and target table adjustment (by residualising) to biological sex and/or age before main machine learning script; it also makes Elastic Net machine learning.
-
+ - 01_fMRIPrep/ – folder contains slurm scripts for running fMRIPrep preprocessing script on resting state and task data of HCP-YA,
+ - 02_XCP-D/ – folder contains slurm scripts for running XCP-D cleaning script on resting state and task data of HCP-YA,
+ - 03_HCP-YA_New_rest-state_extraction_from_cifti_to_table.ipynb, 04_HCP-YA_New_rest-state_extraction_from_cifti_to_table-RETEST.ipynb, 05_HCP-YA_TASK_FC.ipynb, 06_HCP-YA_TASK_FC_retest.ipynb – scripts assembles atlas-based csv tables from CIFTI files from the previous step,
+ - 07_HCP-YA_ENet_Stacked_cognition_norace_pca75_noRestMov_AgeADJ_manyCon_NEW_ADJ_TYPE_OneTrain_stackSTD_5cv_new enhanced.ipynb – this script does fold-wise brain feature and target table adjustment (by residualising) to biological sex and/or age before main machine learning script; it also makes Elastic Net machine learning.
 
 /1_Preprocessing/hcp_a/
-
-01_HCP-A_ENet_Stacked_COG_pca75_ALLADJ_trainAdj_OneTrain_StackSTD_5cv.ipynb – the script does fold-wise brain feature and target table adjustment (by residualising) to biological sex and/or age before main machine learning script; it also makes Elastic Net machine learning.
-
+ - 01_HCP-A_ENet_Stacked_COG_pca75_ALLADJ_trainAdj_OneTrain_StackSTD_5cv.ipynb – the script does fold-wise brain feature and target table adjustment (by residualising) to biological sex and/or age before main machine learning script; it also makes Elastic Net machine learning.
 
 /1_Preprocessing/dud/
-
-01 dud tables clenup (only the same parameters as in hcp).ipynb, 02 dud tables clenup (only the same parameters as in hcp)-retest set.ipynb, 03 dud tables clenup (task FC tables).ipynb, 04 dud tables clenup (task FC tables)-retest set.ipynb – these scripts checks provided Dunedin Study tables for missiong values and reorganize in the same structure as in other two datasets;
-
-05 DUD_StackedML_ElasticNet_cognition_pca75_task-FC-unstd_iq45_NewADJ_OneTrain_stackSTD_5cv_new type of iq res.ipynb – the script does fold-wise brain feature and target table adjustment (by residualising) to biological sex and/or age before main machine learning script; it also makes Elastic Net machine learning;
-
-06 IQ resuduals calculation.ipynb – the script does fold-wise total cognitive score adjustment (adult to childhood).
-
+ - 01 dud tables clenup (only the same parameters as in hcp).ipynb, 02 dud tables clenup (only the same parameters as in hcp)-retest set.ipynb, 03 dud tables clenup (task FC tables).ipynb, 04 dud tables clenup (task FC tables)-retest set.ipynb – these scripts checks provided Dunedin Study tables for missiong values and reorganize in the same structure as in other two datasets;
+ - 05 DUD_StackedML_ElasticNet_cognition_pca75_task-FC-unstd_iq45_NewADJ_OneTrain_stackSTD_5cv_new type of iq res.ipynb – the script does fold-wise brain feature and target table adjustment (by residualising) to biological sex and/or age before main machine learning script; it also makes Elastic Net machine learning;
+ - 06 IQ resuduals calculation.ipynb – the script does fold-wise total cognitive score adjustment (adult to childhood).
 
 2_Modelling/01_NESI_ML/ – the folder contains the main machine learning scripts, adapted to the super computer calculations (on NeSI). The ML parameters for 4 algorithms can be found at params.py script. The calculations can be launched through train_*.py scripts for the single modality level and train_layer2_*.py for the stacked level;
 
 /2_Modelling/02_slurm_launch/ – the folder contains the slurm files helping to launch previous step;
 
-/2_Modelling/03_Generalizability/LS_3dataset_ElasticNet_cognition_NonTask_AgeSexAdj_New_version_stacked.ipynb – the script does the machine learning rounds for the generalizability modelling;
+/2_Modelling/03_Generalizability/
+ - LS_3dataset_ElasticNet_cognition_NonTask_AgeSexAdj_New_version_stacked.ipynb – the script does the machine learning rounds for the generalizability modelling;
 
 /2_Modelling/04_HCP_YA_models/
+ - 01_HCP-YA_ENet_Stacked_cognition_pca75_noRestMov_AgeADJ_manyCon_NEW_ADJ_TYPE_OneTrain_stackSTD_5cv_Feature_Importance_new_enhanced_sets.ipynb – the script runs one-fold machine learning Elastic Net round for getting a feature importance (elastic net weights);
+ - 02_HCP-YA_RETEST_ElasticNet_cognition_pca75_taskFC_NewADJ_OneTrain_stackSTD_5cv_new_enhanced_sets.ipynb – the script runs a one-fold machine learning Elastic Net round with 2 testing sets for test-retest reliability.
 
-01_HCP-YA_ENet_Stacked_cognition_pca75_noRestMov_AgeADJ_manyCon_NEW_ADJ_TYPE_OneTrain_stackSTD_5cv_Feature_Importance_new_enhanced_sets.ipynb – the script runs one-fold machine learning Elastic Net round for getting a feature importance (elastic net weights);
-
-02_HCP-YA_RETEST_ElasticNet_cognition_pca75_taskFC_NewADJ_OneTrain_stackSTD_5cv_new_enhanced_sets.ipynb – the script runs a one-fold machine learning Elastic Net round with 2 testing sets for test-retest reliability.
-
-/2_Modelling/05_HCP_A_models/01_HCP-A_ENet_Stacked_COG_pca75_ALLADJ_trainAdj_OneTrain_StackSTD_5cv_Feature_Importance_short.ipynb – the script runs one-fold machine learning Elastic Net round for getting a feature importance (elastic net weights). 
+/2_Modelling/05_HCP_A_models/
+ - 01_HCP-A_ENet_Stacked_COG_pca75_ALLADJ_trainAdj_OneTrain_StackSTD_5cv_Feature_Importance_short.ipynb – the script runs one-fold machine learning Elastic Net round for getting a feature importance (elastic net weights). 
 
 /2_Modelling/06_DUD_models/
+ - 01_DUD_StackedML_ElasticNet_cognition_pca75_task-FC-unstd_iq45_NewADJ_OneTrain_stackSTD_5cv_Feature Importance.ipynb - the script runs one-fold machine learning Elastic Net round for getting a feature importance (elastic net weights);
+ - 02_DUD_RETEST_ElasticNet_cognition_pca75_taskFC_NewADJ_OneTrain_stackSTD_5cv.ipynb – the script runs a one-fold machine learning Elastic Net round with 2 testing sets for test-retest reliability.
 
-01_DUD_StackedML_ElasticNet_cognition_pca75_task-FC-unstd_iq45_NewADJ_OneTrain_stackSTD_5cv_Feature Importance.ipynb - the script runs one-fold machine learning Elastic Net round for getting a feature importance (elastic net weights);
+/3_Results_Analysis_and_Plotting/05_generalizability/
+ - results_stack_generalizability-extras.ipynb – the script visualizes the generalizability script results.
 
-02_DUD_RETEST_ElasticNet_cognition_pca75_taskFC_NewADJ_OneTrain_stackSTD_5cv.ipynb – the script runs a one-fold machine learning Elastic Net round with 2 testing sets for test-retest reliability.
+/3_Results_Analysis_and_Plotting/06_hcp_ya/
+ - 01_Feature_importance_oneFold_elnet_hcp_ya.ipynb – the script makes plotting of each ML model elastic net feature importance on brain surface, structures, or matrices;
+ - 02_HCP-YA test-retest all ICC HPASS.ipynb – the script makes plotting of ICC index for test-retest reliability for each modality (single and stacked);
+ - 03_HCP-YA test-retest BRAIN areas ICC on non-adjusted mods.ipynb – the script makes plotting of ICC index for test-retest reliability for each brain feature set or connectivity matrix, plotting on the surface, structures, and matrices. 
 
+/3_Results_Analysis_and_Plotting/07_hcp_a/
+ - 01_Feature_importance_oneFold_elnet_hcp_a.ipynb – the script makes plotting of each ML model elastic net feature importance on brain surface, structures, or matrices.
 
+/3_Results_Analysis_and_Plotting/08_dud/
+ - 01_Feature_importance_oneFold_elnet_DUD45_new.ipynb – the script makes plotting of each ML model elastic net feature importance on brain surface, structures, or matrices;
+ - 02_DUD test-retest all ICC.ipynb – the script makes plotting of ICC index for test-retest reliability for each modality (single and stacked);
+ - 03_DUD test-retest BRAIN areas ICC non adj.ipynb – the script makes plotting of ICC index for test-retest reliability for each brain feature set or connectivity matrix, plotting on the surface, structures, and matrices.
+
+/4_Supplementary/
+ - Tables with averaged Indexes/ – the folder contains tables with averaged across fold predictive performance indices (r2, pearson’s r, mae) for each dataset separately;
+ - Tables with indexes across CV folds/ – the folder contains tables with all fold predictive performance indices (r2, pearson’s r, mae) for each index and each dataset separately;
+ - Tables with predicted values across folds/ – the folder contains tables with each modality all folds predicted values for for each dataset separately.
