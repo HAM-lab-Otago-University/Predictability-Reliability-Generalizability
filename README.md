@@ -15,6 +15,43 @@ Note users will need to edit these scripts so that the designated folders and fi
 The data for this article was extensively preprocessed within previous projects as: https://github.com/HAM-lab-Otago-University/HCP for HCP Young Adults dataset, https://github.com/HAM-lab-Otago-University/HCP-Aging_commonality for HCP Aging dataset, and https://dunedinstudy.otago.ac.nz/ for the Dunedin Study dataset.
 Some files, if not placed in this directory, can be found in our aforementioned github projects.
 
+Common abbreviations within scripts:
+
+HCP-YA, hcp-ya, hcp_ya, ya - HCP Young Adults dataset,
+
+HCP-A, hcp-a, hcp_a, a - HCP Aging dataset,
+
+DUD, DUD45, DUD_ch, DUD_res, dud, d - Dunedin Study dataset (with next extension: 45 - scanned at age 45 years old; ch - observed or tested at childhood age (7-11 years old), res - residuals)
+
+
+
 The directory contains the following files and folders:
+
+
+/1_Preprocessing/hcp_ya/
+
+01_fMRIPrep – folder contains slurm scripts for running fMRIPrep preprocessing script on resting state and task data of HCP-YA,
+
+02_XCP-D – folder contains slurm scripts for running XCP-D cleaning script on resting state and task data of HCP-YA,
+
+03_HCP-YA_New_rest-state_extraction_from_cifti_to_table.ipynb, 04_HCP-YA_New_rest-state_extraction_from_cifti_to_table-RETEST.ipynb, 05_HCP-YA_TASK_FC.ipynb, 06_HCP-YA_TASK_FC_retest.ipynb – scripts assembles atlas-based csv tables from CIFTI files from the previous step,
+
+07_HCP-YA_ENet_Stacked_cognition_norace_pca75_noRestMov_AgeADJ_manyCon_NEW_ADJ_TYPE_OneTrain_stackSTD_5cv_new enhanced.ipynb – this script does fold-wise brain feature and target table adjustment (by residualising) to biological sex and/or age before main machine learning script; it also makes Elastic Net machine learning.
+
+
+/1_Preprocessing/hcp_a/
+
+01_HCP-A_ENet_Stacked_COG_pca75_ALLADJ_trainAdj_OneTrain_StackSTD_5cv.ipynb – the script does fold-wise brain feature and target table adjustment (by residualising) to biological sex and/or age before main machine learning script; it also makes Elastic Net machine learning.
+
+
+/1_Preprocessing/dud/
+
+01 dud tables clenup (only the same parameters as in hcp).ipynb, 02 dud tables clenup (only the same parameters as in hcp)-retest set.ipynb, 03 dud tables clenup (task FC tables).ipynb, 04 dud tables clenup (task FC tables)-retest set.ipynb – these scripts checks provided Dunedin Study tables for missiong values and reorganize in the same structure as in other two datasets;
+
+05 DUD_StackedML_ElasticNet_cognition_pca75_task-FC-unstd_iq45_NewADJ_OneTrain_stackSTD_5cv_new type of iq res.ipynb – the script does fold-wise brain feature and target table adjustment (by residualising) to biological sex and/or age before main machine learning script; it also makes Elastic Net machine learning;
+
+06 IQ resuduals calculation.ipynb – the script does fold-wise total cognitive score adjustment (adult to childhood).
+
+
 
 
