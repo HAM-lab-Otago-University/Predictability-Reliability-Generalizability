@@ -73,7 +73,8 @@ Some files, if not placed in this directory, can be found in our aforementioned 
  - 09_feature importance total brain volume 3 datasets.ipynb – this script plots the total brain volume values for 3 datasets on one image.
 
 /3_Results_Analysis_and_Plotting/05_generalizability/
- - results_stack_generalizability-extras.ipynb – the script visualizes the generalizability script results.
+ - results_stack_generalizability-extras.ipynb – the script visualizes the generalizability script results (correlation, r2 and MAE).
+ - results_stack_similarity.ipynb - the script visualizes the similarity in predicted values script results.
 
 /3_Results_Analysis_and_Plotting/06_hcp_ya/
  - 01_Feature_importance_oneFold_elnet_hcp_ya.ipynb – the script makes plotting of each ML model elastic net feature importance on brain surface, structures, or matrices;
@@ -89,6 +90,7 @@ Some files, if not placed in this directory, can be found in our aforementioned 
  - 03_DUD test-retest BRAIN areas ICC non adj.ipynb – the script makes plotting of ICC index for test-retest reliability for each brain feature set or connectivity matrix, plotting on the surface, structures, and matrices.
 
 /4_Supplementary/
- - Tables with averaged Indexes/ – the folder contains tables with averaged across fold predictive performance indices (r2, pearson’s r, mae) for each dataset separately;
- - Tables with indexes across CV folds/ – the folder contains tables with all fold predictive performance indices (r2, pearson’s r, mae) for each index and each dataset separately;
+ - Tables with averaged Predictability Indexes/ – the folder contains tables with averaged across fold predictive performance indices (r2, pearson’s r, mae) for each dataset separately;
+ - Tables with Predictability indexes for each CV folds/ – the folder contains tables with all fold predictive performance indices (r2, pearson’s r, mae) for each index and each dataset separately;
  - Tables with predicted values across folds/ – the folder contains tables with each modality all folds predicted values for for each dataset separately.
+ - Tables with confidence intervals for the main models/ - the folder contains tables with confidence intervals for all predictive performance indices (r2, pearson’s r, mae) of the main model.
