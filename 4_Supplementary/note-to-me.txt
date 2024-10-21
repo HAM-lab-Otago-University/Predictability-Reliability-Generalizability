@@ -1,4 +1,0 @@
-dir contains :
-- HCP-YA new rerun with task-FC in main and retest models
-- Dunedin Study new IQres target,  with mov task con
-- HCP-A less con for stack
