@@ -1,0 +1,181 @@
+name,label,r2,mae,corr
+"Total Brain Volume, eNet",eNet_brainVol,0.086,0.756,0.313
+"Cortical Thickness, eNet",eNet_cort,0.036,0.785,0.218
+"Facename: Encoding-Distractor, eNet",eNet_facename,0.174,0.716,0.431
+"Facename FC, eNet",eNet_facename_FC_PCA75,0.033,0.779,0.225
+"Emotion Processing Contrast, eNet",eNet_faces,0.091,0.757,0.314
+"Emotion Processing FC, eNet",eNet_faces_FC_PCA75,0.006,0.794,0.143
+"MID Contrast, eNet",eNet_mid,0.009,0.797,0.162
+"MID FC, eNet",eNet_mid_FC_PCA75,0.035,0.782,0.235
+"Resting State FC, eNet",eNet_rest_PCA75,0.053,0.772,0.279
+"Stroop Contrast, eNet",eNet_stroop,0.027,0.782,0.206
+"Stroop FC, eNet",eNet_stroop_FC_PCA75,0.070,0.767,0.294
+"Subcortical Volume, eNet",eNet_subc,0.053,0.773,0.255
+"Surface Area, eNet",eNet_surf,0.074,0.768,0.295
+"Total Brain Volume, RF",rf_brainVol,0.059,0.769,0.266
+"Cortical Thickness, RF",rf_cort,0.029,0.787,0.199
+"Facename: Encoding-Distractor, RF",rf_facename,0.153,0.728,0.422
+"Facename FC, RF",rf_facename_FC_PCA75,0.046,0.774,0.253
+"Emotion Processing Contrast, RF",rf_faces,0.050,0.775,0.253
+"Emotion Processing FC, RF",rf_faces_FC_PCA75,0.021,0.789,0.188
+"MID Contrast, RF",rf_mid,-0.002,0.798,0.120
+"MID FC, RF",rf_mid_FC_PCA75,0.027,0.785,0.218
+"Resting State FC, RF",rf_rest_PCA75,0.042,0.780,0.260
+"Stroop Contrast, RF",rf_stroop,0.075,0.769,0.294
+"Stroop FC, RF",rf_stroop_FC_PCA75,0.062,0.771,0.291
+"Subcortical Volume, RF",rf_subc,0.043,0.778,0.238
+"Surface Area, RF",rf_surf,0.063,0.770,0.281
+"Total Brain Volume, SVR",svr_brainVol,0.080,0.759,0.305
+"Cortical Thickness, SVR",svr_cort,0.041,0.783,0.227
+"Facename: Encoding-Distractor, SVR",svr_facename,0.180,0.714,0.440
+"Facename FC, SVR",svr_facename_FC_PCA75,0.058,0.769,0.267
+"Emotion Processing Contrast, SVR",svr_faces,0.070,0.764,0.286
+"Emotion Processing FC, SVR",svr_faces_FC_PCA75,0.012,0.792,0.178
+"MID Contrast, SVR",svr_mid,0.004,0.795,0.147
+"MID FC, SVR",svr_mid_FC_PCA75,0.042,0.773,0.248
+"Resting State FC, SVR",svr_rest_PCA75,0.055,0.773,0.282
+"Stroop Contrast, SVR",svr_stroop,0.116,0.747,0.353
+"Stroop FC, SVR",svr_stroop_FC_PCA75,0.091,0.754,0.317
+"Subcortical Volume, SVR",svr_subc,0.049,0.775,0.250
+"Surface Area, SVR",svr_surf,0.047,0.775,0.256
+"Total Brain Volume, XGB",xgb_brainVol,0.064,0.765,0.276
+"Cortical Thickness, XGB",xgb_cort,0.003,0.794,0.140
+"Facename: Encoding-Distractor, XGB",xgb_facename,0.125,0.742,0.384
+"Facename FC, XGB",xgb_facename_FC_PCA75,0.048,0.773,0.255
+"Emotion Processing Contrast, XGB",xgb_faces,0.021,0.785,0.210
+"Emotion Processing FC, XGB",xgb_faces_FC_PCA75,0.008,0.791,0.163
+"MID Contrast, XGB",xgb_mid,-0.048,0.822,0.037
+"MID FC, XGB",xgb_mid_FC_PCA75,-0.001,0.796,0.185
+"Resting State FC, XGB",xgb_rest_PCA75,0.029,0.781,0.221
+"Stroop Contrast, XGB",xgb_stroop,0.046,0.776,0.262
+"Stroop FC, XGB",xgb_stroop_FC_PCA75,0.050,0.772,0.267
+"Subcortical Volume, XGB",xgb_subc,0.026,0.783,0.208
+"Surface Area, XGB",xgb_surf,0.069,0.768,0.286
+"Stacked: All, eNet+eNet",eNet_eNet_set1,0.290,0.664,0.549
+"Stacked: Task Contrast, eNet+eNet",eNet_eNet_set2,0.187,0.718,0.459
+"Stacked: Non Task, eNet+eNet",eNet_eNet_set3,0.124,0.736,0.380
+"Stacked: Task FC, eNet+eNet",eNet_eNet_set4,0.043,0.765,0.275
+"Stacked: Task Contrast & Task FC, eNet+eNet",eNet_eNet_set5,0.231,0.695,0.493
+"Stacked: All excluding Task FC, eNet+eNet",eNet_eNet_set6,0.263,0.681,0.527
+"Stacked: All excluding Task Contrast, eNet+eNet",eNet_eNet_set7,0.134,0.737,0.396
+"Stacked: Resting and Task FC, eNet+eNet",eNet_eNet_set8,0.084,0.753,0.326
+"Stacked: All, eNet+RF",eNet_rf_set1,0.283,0.671,0.543
+"Stacked: Task Contrast, eNet+RF",eNet_rf_set2,0.181,0.718,0.453
+"Stacked: Non Task, eNet+RF",eNet_rf_set3,0.089,0.748,0.350
+"Stacked: Task FC, eNet+RF",eNet_rf_set4,0.064,0.755,0.292
+"Stacked: Task Contrast & Task FC, eNet+RF",eNet_rf_set5,0.239,0.691,0.497
+"Stacked: All excluding Task FC, eNet+RF",eNet_rf_set6,0.261,0.678,0.522
+"Stacked: All excluding Task Contrast, eNet+RF",eNet_rf_set7,0.130,0.737,0.392
+"Stacked: Resting and Task FC, eNet+RF",eNet_rf_set8,0.086,0.751,0.336
+"Stacked: All, eNet+SVR",eNet_svr_set1,0.284,0.663,0.547
+"Stacked: Task Contrast, eNet+SVR",eNet_svr_set2,0.184,0.719,0.462
+"Stacked: Non Task, eNet+SVR",eNet_svr_set3,0.123,0.736,0.380
+"Stacked: Task FC, eNet+SVR",eNet_svr_set4,0.061,0.760,0.296
+"Stacked: Task Contrast & Task FC, eNet+SVR",eNet_svr_set5,0.230,0.694,0.495
+"Stacked: All excluding Task FC, eNet+SVR",eNet_svr_set6,0.258,0.680,0.527
+"Stacked: All excluding Task Contrast, eNet+SVR",eNet_svr_set7,0.119,0.741,0.386
+"Stacked: Resting and Task FC, eNet+SVR",eNet_svr_set8,0.086,0.752,0.336
+"Stacked: All, eNet+XGB",eNet_xgb_set1,0.272,0.673,0.537
+"Stacked: Task Contrast, eNet+XGB",eNet_xgb_set2,0.172,0.720,0.456
+"Stacked: Non Task, eNet+XGB",eNet_xgb_set3,0.101,0.745,0.362
+"Stacked: Task FC, eNet+XGB",eNet_xgb_set4,0.051,0.761,0.290
+"Stacked: Task Contrast & Task FC, eNet+XGB",eNet_xgb_set5,0.234,0.692,0.500
+"Stacked: All excluding Task FC, eNet+XGB",eNet_xgb_set6,0.248,0.683,0.518
+"Stacked: All excluding Task Contrast, eNet+XGB",eNet_xgb_set7,0.128,0.738,0.399
+"Stacked: Resting and Task FC, eNet+XGB",eNet_xgb_set8,0.085,0.749,0.335
+"Stacked: All, RF+eNet",rf_eNet_set1,0.149,0.735,0.515
+"Stacked: Task Contrast, RF+eNet",rf_eNet_set2,0.139,0.737,0.412
+"Stacked: Non Task, RF+eNet",rf_eNet_set3,0.067,0.768,0.290
+"Stacked: Task FC, RF+eNet",rf_eNet_set4,0.065,0.766,0.292
+"Stacked: Task Contrast & Task FC, RF+eNet",rf_eNet_set5,0.136,0.739,0.452
+"Stacked: All excluding Task FC, RF+eNet",rf_eNet_set6,0.147,0.735,0.488
+"Stacked: All excluding Task Contrast, RF+eNet",rf_eNet_set7,0.093,0.756,0.374
+"Stacked: Resting and Task FC, RF+eNet",rf_eNet_set8,0.083,0.759,0.343
+"Stacked: All, RF+RF",rf_rf_set1,0.132,0.742,0.469
+"Stacked: Task Contrast, RF+RF",rf_rf_set2,0.131,0.738,0.393
+"Stacked: Non Task, RF+RF",rf_rf_set3,0.052,0.774,0.262
+"Stacked: Task FC, RF+RF",rf_rf_set4,0.051,0.775,0.272
+"Stacked: Task Contrast & Task FC, RF+RF",rf_rf_set5,0.129,0.744,0.425
+"Stacked: All excluding Task FC, RF+RF",rf_rf_set6,0.127,0.745,0.437
+"Stacked: All excluding Task Contrast, RF+RF",rf_rf_set7,0.088,0.759,0.345
+"Stacked: Resting and Task FC, RF+RF",rf_rf_set8,0.081,0.762,0.323
+"Stacked: All, RF+SVR",rf_svr_set1,0.148,0.736,0.501
+"Stacked: Task Contrast, RF+SVR",rf_svr_set2,0.139,0.734,0.402
+"Stacked: Non Task, RF+SVR",rf_svr_set3,0.065,0.769,0.284
+"Stacked: Task FC, RF+SVR",rf_svr_set4,0.057,0.771,0.275
+"Stacked: Task Contrast & Task FC, RF+SVR",rf_svr_set5,0.133,0.742,0.428
+"Stacked: All excluding Task FC, RF+SVR",rf_svr_set6,0.141,0.739,0.472
+"Stacked: All excluding Task Contrast, RF+SVR",rf_svr_set7,0.091,0.758,0.354
+"Stacked: Resting and Task FC, RF+SVR",rf_svr_set8,0.084,0.761,0.332
+"Stacked: All, RF+XGB",rf_xgb_set1,0.122,0.748,0.452
+"Stacked: Task Contrast, RF+XGB",rf_xgb_set2,0.118,0.745,0.370
+"Stacked: Non Task, RF+XGB",rf_xgb_set3,0.054,0.773,0.264
+"Stacked: Task FC, RF+XGB",rf_xgb_set4,0.052,0.774,0.266
+"Stacked: Task Contrast & Task FC, RF+XGB",rf_xgb_set5,0.121,0.749,0.410
+"Stacked: All excluding Task FC, RF+XGB",rf_xgb_set6,0.115,0.751,0.413
+"Stacked: All excluding Task Contrast, RF+XGB",rf_xgb_set7,0.077,0.764,0.321
+"Stacked: Resting and Task FC, RF+XGB",rf_xgb_set8,0.080,0.762,0.322
+"Stacked: All, SVR+eNet",svr_eNet_set1,0.248,0.688,0.508
+"Stacked: Task Contrast, SVR+eNet",svr_eNet_set2,0.182,0.713,0.446
+"Stacked: Non Task, SVR+eNet",svr_eNet_set3,0.071,0.761,0.340
+"Stacked: Task FC, SVR+eNet",svr_eNet_set4,0.063,0.761,0.311
+"Stacked: Task Contrast & Task FC, SVR+eNet",svr_eNet_set5,0.213,0.697,0.469
+"Stacked: All excluding Task FC, SVR+eNet",svr_eNet_set6,0.220,0.694,0.482
+"Stacked: All excluding Task Contrast, SVR+eNet",svr_eNet_set7,0.112,0.745,0.385
+"Stacked: Resting and Task FC, SVR+eNet",svr_eNet_set8,0.077,0.758,0.345
+"Stacked: All, SVR+RF",svr_rf_set1,0.147,0.734,0.429
+"Stacked: Task Contrast, SVR+RF",svr_rf_set2,0.149,0.731,0.427
+"Stacked: Non Task, SVR+RF",svr_rf_set3,-0.011,0.794,0.293
+"Stacked: Task FC, SVR+RF",svr_rf_set4,0.024,0.776,0.288
+"Stacked: Task Contrast & Task FC, SVR+RF",svr_rf_set5,0.176,0.720,0.447
+"Stacked: All excluding Task FC, SVR+RF",svr_rf_set6,0.196,0.705,0.465
+"Stacked: All excluding Task Contrast, SVR+RF",svr_rf_set7,0.058,0.765,0.350
+"Stacked: Resting and Task FC, SVR+RF",svr_rf_set8,0.021,0.781,0.322
+"Stacked: All, SVR+SVR",svr_svr_set1,0.218,0.703,0.476
+"Stacked: Task Contrast, SVR+SVR",svr_svr_set2,0.175,0.713,0.449
+"Stacked: Non Task, SVR+SVR",svr_svr_set3,0.046,0.771,0.321
+"Stacked: Task FC, SVR+SVR",svr_svr_set4,0.052,0.767,0.307
+"Stacked: Task Contrast & Task FC, SVR+SVR",svr_svr_set5,0.200,0.702,0.462
+"Stacked: All excluding Task FC, SVR+SVR",svr_svr_set6,0.201,0.701,0.466
+"Stacked: All excluding Task Contrast, SVR+SVR",svr_svr_set7,0.091,0.753,0.371
+"Stacked: Resting and Task FC, SVR+SVR",svr_svr_set8,0.059,0.764,0.335
+"Stacked: All, SVR+XGB",svr_xgb_set1,0.185,0.717,0.454
+"Stacked: Task Contrast, SVR+XGB",svr_xgb_set2,0.144,0.734,0.430
+"Stacked: Non Task, SVR+XGB",svr_xgb_set3,0.030,0.778,0.324
+"Stacked: Task FC, SVR+XGB",svr_xgb_set4,0.036,0.770,0.297
+"Stacked: Task Contrast & Task FC, SVR+XGB",svr_xgb_set5,0.173,0.721,0.447
+"Stacked: All excluding Task FC, SVR+XGB",svr_xgb_set6,0.173,0.712,0.453
+"Stacked: All excluding Task Contrast, SVR+XGB",svr_xgb_set7,0.052,0.767,0.352
+"Stacked: Resting and Task FC, SVR+XGB",svr_xgb_set8,0.022,0.778,0.320
+"Stacked: All, XGB+eNet",xgb_eNet_set1,0.125,0.745,0.393
+"Stacked: Task Contrast, XGB+eNet",xgb_eNet_set2,0.051,0.780,0.269
+"Stacked: Non Task, XGB+eNet",xgb_eNet_set3,0.018,0.788,0.267
+"Stacked: Task FC, XGB+eNet",xgb_eNet_set4,0.002,0.794,0.229
+"Stacked: Task Contrast & Task FC, XGB+eNet",xgb_eNet_set5,0.103,0.756,0.337
+"Stacked: All excluding Task FC, XGB+eNet",xgb_eNet_set6,0.085,0.764,0.321
+"Stacked: All excluding Task Contrast, XGB+eNet",xgb_eNet_set7,0.029,0.781,0.250
+"Stacked: Resting and Task FC, XGB+eNet",xgb_eNet_set8,0.023,0.782,0.244
+"Stacked: All, XGB+RF",xgb_rf_set1,0.022,0.790,0.238
+"Stacked: Task Contrast, XGB+RF",xgb_rf_set2,-0.028,0.808,0.180
+"Stacked: Non Task, XGB+RF",xgb_rf_set3,-0.027,0.805,0.237
+"Stacked: Task FC, XGB+RF",xgb_rf_set4,-0.029,0.805,0.215
+"Stacked: Task Contrast & Task FC, XGB+RF",xgb_rf_set5,0.028,0.780,0.222
+"Stacked: All excluding Task FC, XGB+RF",xgb_rf_set6,-0.013,0.803,0.191
+"Stacked: All excluding Task Contrast, XGB+RF",xgb_rf_set7,-0.002,0.792,0.225
+"Stacked: Resting and Task FC, XGB+RF",xgb_rf_set8,-0.010,0.795,0.222
+"Stacked: All, XGB+SVR",xgb_svr_set1,0.059,0.775,0.272
+"Stacked: Task Contrast, XGB+SVR",xgb_svr_set2,0.000,0.798,0.210
+"Stacked: Non Task, XGB+SVR",xgb_svr_set3,-0.012,0.800,0.248
+"Stacked: Task FC, XGB+SVR",xgb_svr_set4,-0.022,0.803,0.219
+"Stacked: Task Contrast & Task FC, XGB+SVR",xgb_svr_set5,0.047,0.778,0.247
+"Stacked: All excluding Task FC, XGB+SVR",xgb_svr_set6,0.029,0.788,0.237
+"Stacked: All excluding Task Contrast, XGB+SVR",xgb_svr_set7,0.006,0.791,0.233
+"Stacked: Resting and Task FC, XGB+SVR",xgb_svr_set8,0.000,0.791,0.232
+"Stacked: All, XGB+XGB",xgb_xgb_set1,0.041,0.783,0.243
+"Stacked: Task Contrast, XGB+XGB",xgb_xgb_set2,-0.006,0.801,0.200
+"Stacked: Non Task, XGB+XGB",xgb_xgb_set3,-0.023,0.804,0.243
+"Stacked: Task FC, XGB+XGB",xgb_xgb_set4,-0.026,0.804,0.217
+"Stacked: Task Contrast & Task FC, XGB+XGB",xgb_xgb_set5,0.045,0.777,0.242
+"Stacked: All excluding Task FC, XGB+XGB",xgb_xgb_set6,0.019,0.791,0.222
+"Stacked: All excluding Task Contrast, XGB+XGB",xgb_xgb_set7,-0.002,0.793,0.224
+"Stacked: Resting and Task FC, XGB+XGB",xgb_xgb_set8,-0.006,0.792,0.224
